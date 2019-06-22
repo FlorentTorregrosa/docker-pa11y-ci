@@ -3,7 +3,19 @@
 This repo contains the build for the maintained docker container
 `florenttorregrosa/pa11y-ci`.
 
+## Caution
+
+The option `--no-sandbox` can be considered insecure depending if the website
+scanned contains malicious javascript code.
+
+Scan only trusted websites.
+
 ## Use
+
+### Basic usage
+
+1. Clone this repository
+2. `docker-compose run pa11y_ci /bin/sh -c "pa11y-ci --sitemap https://example.com/sitemap.xml --config /workspace/config.json"`
 
 ### Sample docker-compose entry
 
