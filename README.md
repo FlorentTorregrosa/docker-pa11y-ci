@@ -59,7 +59,6 @@ docker-compose (assumes this container is set up as a service named "pa11y"):
 ```sh
 docker-compose run pa11y_ci /bin/sh -c "pa11y-ci --config /workspace/config.json"
 docker-compose run pa11y_ci /bin/sh -c "pa11y-ci --sitemap https://example.com/sitemap.xml --config /workspace/config.json"
-docker-compose run --user=pptruser pa11y_ci /bin/sh -c "/node_modules/.bin/pa11y-ci --sitemap https://florent-torregrosa.fr/sitemap.xml --config /workspace/config.json"
 ```
 
 ## Additional Configuration
