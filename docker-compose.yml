@@ -1,6 +1,9 @@
 version: '3.4'
+
 services:
-  pa11y:
-    build: .
+  pa11y_ci:
+#    image: florenttorregrosa/pa11y-ci:2-alpine
+    image: florenttorregrosa/pa11y-ci:2-stretch
     volumes:
-      - ./config.json:/workspace/config.json
+      - ./config.json:/workspace/config.json:delegated
+    shm_size: '1gb'
