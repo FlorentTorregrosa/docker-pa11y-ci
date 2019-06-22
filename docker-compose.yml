@@ -2,8 +2,7 @@ version: '3.4'
 
 services:
   pa11y_ci:
-#    image: florenttorregrosa/pa11y-ci:2-alpine
-    image: florenttorregrosa/pa11y-ci:2-stretch
+    image: florenttorregrosa/pa11y-ci:2-alpine
     volumes:
       - ./config.json:/workspace/config.json:delegated
     shm_size: '1gb'

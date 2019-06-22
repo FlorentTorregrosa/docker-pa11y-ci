@@ -13,7 +13,7 @@ A sample docker-compose file for this container is as follows:
 version: '3.4'
 services:
   pa11y:
-    image: florenttorregrosa/pa11y-ci:0.10
+    image: florenttorregrosa/pa11y-ci:2-alpine
     volumes:
        - ./config.json:/workspace/config.json
 ```
